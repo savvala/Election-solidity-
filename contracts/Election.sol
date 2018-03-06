@@ -22,4 +22,11 @@ contract Election {
     candidatesCount ++;
     candidates[candidatesCount] = Candidate(candidatesCount, _name, 0);
   }
+
+  funtion vote (uint, _candidateId) public {
+    // record that voter has voted
+
+    // update candidate vote count
+    candidates[_candidateId].voteCount ++;
+  }
 }
